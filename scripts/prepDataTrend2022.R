@@ -1,6 +1,6 @@
 #no runable without the mapShen package (renamed shenAquatics on git)
-library(mapShen) #same as the line below, renamed because what started as a mapping package turned into something else
-#library(shenAquatics) #github.com/evanchildress/shenAquatics
+# library(mapShen) #same as the line below, renamed because what started as a mapping package turned into something else
+library(shenAquatics) #github.com/evanchildress/shenAquatics
 library(plotHacks) #on github.com/evanchildress/plotHacks
 library(tidyr)
 library(reshape2)
