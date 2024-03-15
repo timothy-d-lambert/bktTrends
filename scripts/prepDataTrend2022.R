@@ -1,7 +1,7 @@
-#no runable without the mapShen package (renamed shenAquatics on git)
-# library(mapShen) #same as the line below, renamed because what started as a mapping package turned into something else
-library(shenAquatics) #github.com/evanchildress/shenAquatics
-library(plotHacks) #on github.com/evanchildress/plotHacks
+# doesn't run without the mapShen package (renamed shenAquatics on git)
+# library(mapShen) # same as the line below, renamed because what started as a mapping package turned into something else
+library(shenAquatics) # github.com/evanchildress/shenAquatics
+library(plotHacks) # on github.com/evanchildress/plotHacks
 library(tidyr)
 library(reshape2)
 library(jagsUI)
@@ -16,11 +16,11 @@ minNumYears<-2
 firstYear<-1996
 lastYear<-2022
 
-sites<-aqData("sites") %>%
+sites <- aqData("sites") %>%
   setkey("SiteID") %>%
   .[InPark==1]
 
-wsAttr<-fread("C:/Users/echildress/OneDrive - DOI/Documents/mapShen/data/wsArea.csv") %>%
+wsAttr<-fread("/Users/timothylambert/Repos/shenAquatics/data/wsArea.csv") %>%
   setkey(SiteID)
 
 

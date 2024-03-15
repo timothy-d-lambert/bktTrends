@@ -54,6 +54,11 @@ source(file = "/Users/timothylambert/Repos/shenAquatics/R/aqConnector.R")
 
 
 # TESTING -- getting ODBC drivers to work:
+library(RODBC)
+
+unique(odbc::odbcListDrivers()[[1]])
+
+library(here)
 
 # Confirm the path is correct by reading in a csv
 wsArea <- read.csv(file = "/Users/timothylambert/Repos/shenAquatics/data/wsArea.csv")
@@ -66,7 +71,6 @@ RShowDoc("RODBC", package="RODBC")
 
 
 
-library(RODBC)
 
 sqlTables(con)
 
