@@ -15,7 +15,7 @@ library(devtools)
 install_github("evanchildress/shenAquatics") # option A: Evan's GitHub
 install_github("timothy-d-lambert/shenAquatics") # option B: from my fork/branch
 
-# Method 2: Install locally
+# Method 2: install locally
 install_local("/Users/timothylambert/Repos/shenAquatics")
 
 
