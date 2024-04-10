@@ -54,7 +54,8 @@ nongame<-aqData("nongame") %>%
   unique() %>%
   setkey(SiteID,sDate,RUN)
 
-runs<-unique(rbind(nongame[,.(SiteID,sDate,RUN)],game[,.(SiteID,sDate,RUN)])) %>%
+runs <- unique(rbind(nongame[,.(SiteID,sDate,RUN)],
+                     game[,.(SiteID,sDate,RUN)])) %>%
   .[RUN %in% 1:3] %>%
   crossing(AGE=0:1) %>%
   data.table() %>%

@@ -16,7 +16,7 @@ install_github("evanchildress/shenAquatics") # option A: Evan's GitHub
 install_github("timothy-d-lambert/shenAquatics") # option B: from my fork/branch
 
 # Method 2: install locally
-install_local("/Users/timothylambert/Repos/shenAquatics")
+install_local("/Users/timothylambert/Repos/shenAquatics", force = TRUE)
 
 
 # # Other options:
@@ -31,7 +31,7 @@ install_local("/Users/timothylambert/Repos/shenAquatics")
 # 
 # #   build the manual
 # build_manual(pkg = "/Users/timothylambert/Repos/shenAquatics", path = NULL)
-# # (note: saved in Repos, not shenAquatics)
+# # (note: manual is saved in Repos, not shenAquatics)
 
 
 install_github("evanchildress/plotHacks")
