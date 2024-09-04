@@ -12,7 +12,7 @@ here::i_am(path = "practice-by-Tim.R")
 library(devtools)
 
 # Method 1: Install from GitHub
-install_github("evanchildress/shenAquatics") # option A: Evan's GitHub
+# install_github("evanchildress/shenAquatics") # option A: Evan's GitHub
 install_github("timothy-d-lambert/shenAquatics") # option B: from my fork/branch
 
 # Method 2: install locally
